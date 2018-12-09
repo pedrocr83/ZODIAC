@@ -1,14 +1,4 @@
 /*ANIMATIONS*/
-
-.fadein {
-  animation: fadeIn ease 5s;
-  -webkit-animation: fadeIn ease 5s;
-  -moz-animation: fadeIn ease 5s;
-  -o-animation: fadeIn ease 5s;
-  -ms-animation: fadeIn ease 5s;
-}
-
-
 @keyframes fadeIn{
   0% {
     opacity:0;
@@ -54,6 +44,14 @@
   }
 }
 
+.fadein {
+  animation: fadeIn ease 5s;
+  -webkit-animation: fadeIn ease 5s;
+  -moz-animation: fadeIn ease 5s;
+  -o-animation: fadeIn ease 5s;
+  -ms-animation: fadeIn ease 5s;
+}
+
 /*THE REST*/
 
 body{
@@ -62,16 +60,8 @@ body{
   min-width: 100vw;
 }
 
-.maindiv::after{
-  content: "";
+.lowerdiv{
   background: url("../images/wallpaper.png");
-  opacity: 0.2;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;
 }
 
 .upper{
@@ -80,10 +70,10 @@ body{
 }
 
 .lower{
+  background-color: rgba(247, 247, 247, 0.85);
   display: flex;
   width: 100vw;
   height: 55vh;
-
 }
 
 h1 {
@@ -108,19 +98,19 @@ h1 {
    font-size: large;
  }
 
- .insetshadow {
-    color: #202020;
-    letter-spacing: .2vw;
-    text-shadow:-1px -1px 1px #111;
-  }
+.insetshadow {
+  color: #202020;
+  letter-spacing: .2vw;
+  text-shadow:-1px -1px 1px #111;
+}
 
-  .title {
-    display: flex;
-    justify-content: center;
-    color: #f7fcf4;
-    background: #e25724;
-    margin-top: 0;
-  }
+.title {
+  display: flex;
+  justify-content: center;
+  color: #f7fcf4;
+  background: #00b3ad;
+  margin-top: 0;
+}
 
 .form-group {
   display: flex;
